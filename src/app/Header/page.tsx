@@ -50,11 +50,20 @@ const Navbar = () => {
             >
               Home
             </button>
+
+            {/* Teams List */}
+            <button
+              onClick={() => router.push('/View_Sports_Team')}
+              className="hover:text-gray-300 transition-colors"
+            >
+              View Teams
+            </button>
+
             <button
               onClick={handleCategoryClick}
               className="hover:text-gray-300 transition-colors"
             >
-              View Match
+              Watch Match
             </button>
             <button
               onClick={() => router.push('/Registration')}
@@ -85,11 +94,18 @@ const Navbar = () => {
               >
                 Home
               </button>
+              {/* team list */}
+              <button
+              onClick={() => router.push('/View_Sports_Team')}
+              className="block px-3 py-2 rounded-md hover:bg-gray-700 transition-colors"
+              >
+              View Teams
+            </button>
               <button
                 onClick={handleCategoryClick}
                 className="block px-3 py-2 rounded-md hover:bg-gray-700 transition-colors"
               >
-                Category
+                Watch Match
               </button>
               <button
                 onClick={() => router.push('/Registration')}

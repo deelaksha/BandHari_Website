@@ -61,9 +61,14 @@ const Navbar = () => {
             >
               Players List
             </button>
-
+            {/* Registration Status */}
         
-            
+            <button
+              onClick={() => router.push('/Owner/Registration_Status')}
+              className="hover:text-gray-300 transition-colors"
+            >
+              Registartion_Status
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -107,6 +112,12 @@ const Navbar = () => {
               className="block px-3 py-2 rounded-md hover:bg-gray-700 transition-colors"
             >
               Players List
+            </button>
+            <button
+              onClick={() => router.push('/Owner/Registration_Status')}
+              className="block px-3 py-2 rounded-md hover:bg-gray-700 transition-colors"
+            >
+              Registartion_Status
             </button>
             </div>
           </div>
